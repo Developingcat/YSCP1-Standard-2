@@ -21,14 +21,13 @@ bill = input(float("Please enter the bill amount here: "))
 percent = input(float("Please enter the tip percentage here: "))
 
 ^ Two above led to ValueErrors, because those are strings. Strings are not floats. I am a mere jester for the court. 
-
-Percent is easy to convert to a float, it's just the bill that'll be tricky. 
+Swapped those two around 
 
 
 
 --------
 Those variables will then be put into a formula, try following the formula word for word. 
-Do not overcomplicate it. And do not overcomplicate it with the uml.
+Do not overcomplicate it. And note to myself; do not overcomplicate it with the uml or because of.
 
 
 tip_percent = percent / 100 <- this makes it a DECIMAL, because when it's entered it'll be a whole number, and that's smelly 
@@ -40,6 +39,13 @@ total_tip = bill * tip_percent
 Just one more variable;
 
 total_bill = bill + total tip 
+
+====
+Formatting methods attempted for the decimal because 
+
+{bill:.2f} <- Keeps saying invalid decimal literal, and I don't understand why (THAT IS THE RIGHT ONE.) and I do not 
+know how to fix it.
+Literally everything BUT that works.
 
 
 
